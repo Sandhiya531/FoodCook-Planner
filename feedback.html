@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Feedback Page - FoodCook Planner </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>FoodCook Planner
+            <a href="./index.html" style="padding:2px 10px;font-size:15px;">Back</a>
+        </header>
+
+        <main>
+            <h4>Feedback Form</h4>
+
+            <style>
+                form {
+                    margin-top: 20px;
+                    background-color: #FFF;
+                    padding: 20px;
+                    border-radius: 5px;
+                }
+
+                form * {
+                    margin: 5px;
+                    width: 100%;
+                }
+
+                form input,
+                textarea {
+                    padding: 5px 10px;
+                    font-size: 10px;
+                    border: 1px solid gainsboro;
+                    border-radius: 5px;
+                }
+
+                form button {
+                    padding: 5px 10px;
+                    background-color: royalblue;
+                    border: none;
+                    color: #FFF;
+                    border-radius: 5px
+                }
+
+                form label {
+                    display: flex;
+                    align-items: center;
+                    font-size: 10px;
+                    color: gray;
+                    user-select: none;
+                }
+
+                form label input,
+                form input[type='radio'] {
+                    width: auto;
+                }
+
+                .d-flex {
+                    display: flex;
+                }
+        </style>
+
+            <form name="feedback">
+                <div class="fullName">
+                    <input type="text" name="fullName" placeholder="Enter your full name">
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <input type="radio" name="type" id="general-feedback" value="general-feedback">
+                        <label for="general-feedback">General Feedback</label>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" name="type" id="technical-support" value="technical-support">
+                        <label for="technical-support">Technical Support</label>
+                    </div>
+                    <div class="d-flex">
+                        <input type="radio" name="type" id="contribution" value="contribution">
+                        <label for="contribution">Contribution</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Enter you email">
+                </div>
+                <div>
+                    <textarea name="dedcription" placeholder="Enter your feedback briefly" rows="4"></textarea>
+                </div>
+                <div>
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms">
+                        I accept your terms and conditions
+                    </label>
+                </div>
+                <div>
+                    <button>Submit</button>
+                </div>
+            </form>
+
+        </main>
+        <script src="./js/feedback.js"></script>
+    </body>
+</html>
